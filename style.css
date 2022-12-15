@@ -1,0 +1,182 @@
+@font-face {
+    font-family: BOOTLE;
+    src: url(Bootle-4B9l.ttf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@font-face {
+    font-family: muli;
+    src: url(muli.ttf);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-family: 'Satisfy', cursive;
+    font-size: 25px;
+    padding: 10px;
+}
+.container1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+img {
+    width: 680px;
+    height: 317px;
+}
+section {
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    padding: 40px 4%;
+    font-family: roboto;
+    color: rgb(20, 20, 20);
+
+
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+h1 {
+    margin-bottom: 20px;
+    font-family: BOOTLE;
+    color: rgb(0, 0, 0);
+}
+.integrantes h1 {
+    font-size: 35px;
+    font-family: 'Secular One', sans-serif;
+}
+.bloco2 {
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
+.bloco2 h1 {
+    color: aliceblue;
+    font-size: 35px;
+    font-family: 'Secular One', sans-serif;
+}
+.origemp {
+    font-size: 30px;
+    font-family: muli;
+    font-weight: 800;
+    padding: 5%;
+}
+.bloco3 h1 {
+    font-size: 35px;
+    font-family: 'Secular One', sans-serif;
+
+}
+/* ALBUNS BLOCO3 */
+.album {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 5px;
+}
+.foto-album img {
+    width: 300px;
+    height: 300px;
+}
+
+.foto-album {
+    width: 300px;
+    height: 300px;
+    flex-grow: 1;
+    transition: transform .4s;
+}
+.foto-album:hover {
+    transform: scale(1.1);
+    filter: brightness();
+}
+.bloco4 {
+    height: 300px;
+    color: white;
+    background-color: black;
+}
+.bloco4 h1 {
+    color: white;
+    font-size: 35px;
+    font-family: 'Secular One', sans-serif;
+}
+audio {
+    margin: 5px;
+    padding: 5px;
+}
+footer {
+    background-color: rgb(33, 33, 33);
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    font-family: muli;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 800;
+}
+/* EFEITO PARALLAX */
+section:nth-of-type(1) h1 {
+    color: white;
+    font-size: 60px;
+    font-weight: 400;
+    margin-top: 150px;
+}
+section:nth-of-type(1) {
+    background-image: url("beatles1.jpg");
+    color: white;
+    font-size: 60px;
+}
+section:nth-of-type(3) {
+    background-image: url("beatles3.jpeg");
+}
+section:nth-of-type(5) {
+    background-image: url("beatles4.jpg");
+}
+section:nth-of-type(7) {
+    background-image: url("beatles5.jpg");
+}
+@media (max-width:750px) {
+    
+    .bloco1 {
+        height: 350px;
+    }
+
+    img {
+        width: 400px;
+        height: 195px;
+    }
+    .origemp {
+        font-size: 25px;
+        font-family: muli;
+        font-weight: 800;
+        padding: 5%;
+    }
+    .foto-album {
+        width: 150px;
+        height: 150px;
+        flex-grow: 1;
+        transition: transform .4s;
+    }
+    .album a img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .bloco3 {
+        height: 400px;
+    }
+
+    audio {
+        width: 200px;
+        height: 45px;
+    }
+}
